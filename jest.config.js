@@ -4,7 +4,7 @@ export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
-    '^.+\\.(t|j)sx?$': 'babel-jest',
+    '^.+\\.(t|j)sx?$': '@swc/jest', // Replace babel-jest
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
